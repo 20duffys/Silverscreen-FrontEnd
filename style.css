@@ -10,6 +10,7 @@ body {
 
 .main-container {
   display:flex;
-  justify-content: center;
-  align-content: center;
+  justify-content: space-around;;
+  align-content: space-around;
+
 }
