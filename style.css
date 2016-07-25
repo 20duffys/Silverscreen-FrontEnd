@@ -1,4 +1,9 @@
 body {
   padding: 20px;
-  align-content: center;
+  text-align: center;
+  background-image: url("http://www.downtownmagazinenyc.com/wp-content/uploads/2015/10/6858584861_ed1300ccef_b.jpg");
+}
+
+#search-box {
+  font: black;
 }
