@@ -12,8 +12,8 @@ window.onload = function() {
 
     console.log("userChosenMovie:", userChosenMovie);
 
-
-    var endpoint1 = 'http://www.omdbapi.com/?t=';
+s
+    var endpoint1 = 'https://www.omdbapi.com/?t=';
     var query1 = endpoint1 + userChosenMovie
     console.log("query: ", query1);
 
