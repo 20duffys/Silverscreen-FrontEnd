@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SilverScreen</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+
+  </head>
+  <body>
+
+
+    <h1>SilverScreen</h1>
+
+    <div id="part-one">
+      <form>
+
+        </div>
+        <!-- input box -->
+        <div id="search-box-div">
+            <label>Search:
+              <input id="search-box" type="text" placeholder="What movie are you looking for?" size="80" />
+            </label>
+        </div>
+
+        <br>
+        <br>
+
+        <!-- search button -->
+        <button type="button" class="my btn" id="search-btn">Search OMDB </button>
+
+        <br>
+        <br>
+
+        <!-- search button -->
+        <button type="button" class="my btn" id="NYT-btn">See NYT Article</button>
+
+      </form>
+
+      <br>
+      <br>
+      <!-- Hidden Data below ++++++++++++++++++++++++++++ -->
+
+      <!-- This is where the omdb information will appear -->
+      <div id="info-container">
+        <h3>OMDB Information:</h3>
+        <br>
+        <p>
+          <b><span>Title:</span></b>
+          <span id="title">
+          Title will go here.
+          </span>
+        </p>
+        <p>
+          <b><span>Year:</span></b>
+          <span id="year">Year will go here.</span>
+        </p>
+        <p>
+          <b><span>Poster:</span></b><br>
+          <span id="poster">Poster will go here</span>
+        </p>
+        <p>
+          <b><span>Director:</span></b><br>
+          <span id="director">Director will go here</span>
+        </p>
+        <p>
+          <b><span>Rating:</span></b><br>
+          <span id="rating">Rating will go here</span>
+        </p>
+      </div>
+
+      <br>
+        <div id="NYT-container">
+          <h3>New York Times Information</h3>
+          <br>
+
+            <b><span>New York Times Article Headline:</span></b><br>
+            <span class="NYT-resource" id="headline-info"></span>
+            <br>
+            <br>
+            <b><span>New York Times Movie Summary:</span></b><br>
+            <span class="NYT-resource" id="summary-info"></span>
+            <br>
+            <br>
+            <b><span>New York Times URL to full article:</span></b><br>
+            <span class="NYT-resource" id="url-info"></span>
+        </div>
+
+    </div>
+    <br>
+
+        <form>
+      <!-- radio buttons: -->
+      <label><b>Choose an option:</b>
+        <br>
+
+        <!-- see all -->
+        <input class="faves-radios" type="radio" id="see-all"
+        name="chosen-radio" value="see-all"> See all favorites
+        <br>
+
+        <!-- add new -->
+        <input class="faves-radios" type="radio" id="add-new"
+               name="chosen-radio" value="add-new"> Add new favorite
+        <br>
+
+        <!-- Find by name -->
+        <input class="faves-radios" type="radio" id="find-by-name"
+               name="chosen-radio" value="find-by-name"> Find a favorite
+        <br>
+
+        <!-- delete by name -->
+        <input class="faves-radios" type="radio" id="delete-by-name"
+               name="chosen-radio" value="delete-by-name"> Delete a favorite
+        <br>
+
+        <!-- update by name -->
+        <input class="faves-radios" type="radio" id="update-by-name"
+               name="chosen-radio" value="update-by-name"> Update a favorite
+        <br>
+
+        <br>
+      </label>
+
+      <br>
+
+      <button name="go-button" class="my-btn" id="go-button">Go!</button>
+    </form>
+    <br><br>
+    <hr>
+
+    <!-- ****************** append info *********************** -->
+
+    <!-- See All: -->
+    <div id="all-div">
+      <p><b>All:</b></p>
+      <ul id="faves-list">
+        <!-- append favorites here -->
+      </ul>
+      <br><hr>
+    </div>
+
+    <!-- Add: -->
+    <div id="add-div" class="">
+      <p><b>Add new:</b></p>
+      Name: <input type="text" id="add-new-name" class="" value=""><br><br><br>
+      <span class="my-btn" name="add-button" id="add-button">Add</span>
+      <br><hr>
+    </div>
+
+    <!-- Find: -->
+    <div id="find-div" class="">
+      <p><b>Find:</b></p>
+      Name: <input type="text" id="find-name" class="" value=""><br><br><br>
+      <span class="my-btn" name="find-button" id="find-button">Find</span>
+      <br><hr>
+    </div>
+
+    <!-- Delete: -->
+    <div id="delete-div">
+      <p><b>Delete:</b></p>
+      Name: <input type="text" id="delete-name" class="" value=""><br><br><br>
+      <span class="my-btn" name="delete-button" id="delete-button">Delete</span>
+      <br><hr>
+    </div>
+
+    <!-- Update: -->
+    <div id="update-div">
+      <p><b>Update:</b></p>
+      Name: <input type="text" id="update-name" class="" value="">
+      <br><br>
+      New Name: <input type="text" id="new-update-name" class="" value=""><br><br><br>
+      <span class="my-btn" name="update-button" id="update-button">Update</span>
+      <br><hr>
+    </div>
+
+    </div>
+
+
+
+
+    <!-- CDNs -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" charset="utf-8"></script>
+    <script src="index.js" charset="utf-8"></script>
+    </body>
+    </html>
+
+
+  </body>
+</html>
