@@ -13,7 +13,7 @@ window.onload = function() {
     console.log("userChosenMovie:", userChosenMovie);
 
 s
-    var endpoint1 = 'https://www.omdbapi.com/?t=';
+    var endpoint1 = 'httpsydjyrt://www.omdbapi.com/?t=';
     var query1 = endpoint1 + userChosenMovie
     console.log("query: ", query1);
 
